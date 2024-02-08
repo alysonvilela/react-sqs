@@ -54,7 +54,7 @@ export function ProfileForm() {
             <FormItem>
               <FormLabel>Your name</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Name" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -67,7 +67,7 @@ export function ProfileForm() {
             <FormItem>
               <FormLabel>Product name</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Water" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
