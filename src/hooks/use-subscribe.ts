@@ -5,7 +5,7 @@ import {
   listen,
   useEventBroker,
 } from "@/store/event-broker";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect } from "react";
 
 export const useSubscribe = (
   topic: IAvaiableEvents,

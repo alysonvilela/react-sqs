@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { shared } from "use-broadcast-ts";
 
+const newShared = shared as unknown as typeof persist;
 interface DeliverQueueListItem {
   id: string;
   name: string;
@@ -16,7 +17,7 @@ interface DeliverQueueStore {
 }
 
 export const useDeliverQueueStore = create<DeliverQueueStore>()(
-  shared(
+  newShared(
     persist(
       (set) => ({
         queue: [],
